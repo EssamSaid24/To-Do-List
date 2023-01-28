@@ -7,6 +7,10 @@ body{
     color: white;     /* font color */
 
 }
+p{
+    font-size: 32px;
+    text-align: center;
+}
 h1{
     text-align: center;
     font-size: 55px;
@@ -33,4 +37,61 @@ h1{
     justify-content: space-between;
     
 
+}
+.icon{
+    font-size: 25px;
+}
+.icon:hover{
+    font-size: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.icon-cross{
+    margin-right:25px ;
+}
+.icon-cross:hover{
+    color: rgb(244, 70, 70);
+}
+.icon-star-full:hover{
+    color: yellow;
+}
+.icon-checkmark:hover{
+    color: green;
+}
+form{
+    text-align: center;
+}
+input{
+    margin-left: auto;
+    margin-right: auto;
+    padding:  20px 400px;
+    border-radius:7px ;
+    font-size: 22px;
+    text-align: center;
+}
+
+button {all:unset;}
+
+.icon-arrow-up{
+    font-size: 25px;
+    position: relative;
+    top: 8px;
+}
+.icon-arrow-up:hover{
+    color: cadetblue;
+}
+h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+.dn{
+    display: none;
+}
+.p{
+    /* text-align: center; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.yellow{
+    color: yellow;
 }
