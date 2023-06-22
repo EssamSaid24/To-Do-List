@@ -29,10 +29,6 @@ container.addEventListener('click', (eo) => {
         eo.target.classList.add("dn");
         const right = `<p class="p" >Done</p>`;
         eo.target.parentElement.parentElement.innerHTML = right;
-        // setTimeout(() => {
-        //     console.log("object");
-        //     task.classList.remove("task")
-        //   }, 1000);
     }
     else if (eo.target.className == "icon-star-full icon") {
         eo.target.classList.add("yellow");
