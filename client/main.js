@@ -1,26 +1,14 @@
 const btn = document.getElementById("btn");
 const container = document.getElementById("container");
 const input = document.querySelector("input");
-const form = document.querySelector("form");
 
 
-const task = document.getElementsByClassName('task');
+btn.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
 
-form.addEventListener('submit', (eo) => {
-    eo.preventDefault();
-    const newTask = `    <div  class="task">
-    <span class="icon-star-full icon"></span>
-    <p>
-        ${input.value}
-    </p>
-    <div>
-    <span class="icon-cross icon"></span>
-    <span class="icon-checkmark icon"></span>
-    </div>
-    </div>`;
-    container.innerHTML += newTask;
-    input.value = "";
-});
+    window.location.href = "all";
+})
+
 container.addEventListener('click', (eo) => {
     if (eo.target.className == "icon-cross icon") {
         eo.target.parentElement.parentElement.remove();
